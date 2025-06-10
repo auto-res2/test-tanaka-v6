@@ -1,0 +1,27 @@
+Using device: cuda
+Running quick test of the experiments...
+===== Experiment 1: Convergence Speed and Stability Evaluation =====
+Training HFR-DT model...
+Epoch 1/1 for HFR_DT
+HFR_DT Iter 0: Loss=0.2135, Grad Norm=0.2806
+HFR_DT Iter 10: Loss=0.2062, Grad Norm=0.2830
+Training FiT model...
+Epoch 1/1 for FiT
+FiT Iter 0: Loss=0.2160, Grad Norm=0.2927
+FiT Iter 10: Loss=0.1907, Grad Norm=0.2727
+Saved .research/iteration1/images/training_loss.pdf
+Saved .research/iteration1/images/gradient_norms.pdf
+
+===== Experiment 2: High-Resolution Extrapolation and Image Quality Assessment =====
+Saved .research/iteration1/images/hfr_generated.pdf
+Saved .research/iteration1/images/fit_generated.pdf
+HFR-DT FID Score (dummy): 13.385242744264243
+FiT FID Score (dummy): 28.90484966483745
+
+===== Experiment 3: Multi-Scale Token Consistency and Cross-Scale Reconstruction =====
+Saved .research/iteration1/images/token_maps.pdf
+Saved .research/iteration1/images/reconstruction_comparison.pdf
+Quick test completed! All experiments executed.
+
+===== Setting status_enum to 'stopped' =====
+Status: stopped
