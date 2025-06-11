@@ -1,0 +1,10 @@
+/home/runner/work/test-tanaka-v6/test-tanaka-v6/src/main.py:59: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x=lambdas, y=losses, palette="viridis")
+/home/runner/work/test-tanaka-v6/test-tanaka-v6/src/main.py:83: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x=models, y=rewards, palette="coolwarm")

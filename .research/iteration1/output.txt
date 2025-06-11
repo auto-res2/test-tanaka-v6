@@ -1,0 +1,85 @@
+Starting quick test of all experiments:
+
+Running Experiment 1: Loss Ablation Study
+Training model: OT_DBC
+Epoch 1: Average Loss = 19.3843
+Epoch 2: Average Loss = 16.7770
+Epoch 3: Average Loss = 13.7362
+Epoch 4: Average Loss = 9.7738
+Epoch 5: Average Loss = 4.3325
+Training model: Diffusion_BC
+Epoch 1: Average Loss = 13.6324
+Epoch 2: Average Loss = 11.6380
+Epoch 3: Average Loss = 9.1348
+Epoch 4: Average Loss = 5.4854
+Epoch 5: Average Loss = 0.0492
+Training model: OT_BC
+Epoch 1: Average Loss = 15.7770
+Epoch 2: Average Loss = 14.2225
+Epoch 3: Average Loss = 12.2865
+Epoch 4: Average Loss = 10.2545
+Epoch 5: Average Loss = 8.1175
+Experiment 1 complete. Loss curves saved as training_loss_lossAblation.pdf
+
+
+Running Experiment 2: Hyperparameter Sensitivity on OT Loss Regularization
+
+Training OT-DBC model with ot_lambda = 0.1
+Training model: OT_DBC
+Epoch 1: Average Loss = 7.1939
+Epoch 2: Average Loss = 6.1413
+Epoch 3: Average Loss = 4.8882
+Epoch 4: Average Loss = 3.0594
+Epoch 5: Average Loss = 0.4589
+Final average loss for lambda=0.1: 0.4589
+
+Training OT-DBC model with ot_lambda = 0.5
+Training model: OT_DBC
+Epoch 1: Average Loss = 9.5186
+Epoch 2: Average Loss = 8.0059
+Epoch 3: Average Loss = 6.5505
+Epoch 4: Average Loss = 4.6426
+Epoch 5: Average Loss = 2.1733
+Final average loss for lambda=0.5: 2.1733
+
+Training OT-DBC model with ot_lambda = 1.0
+Training model: OT_DBC
+Epoch 1: Average Loss = 9.7102
+Epoch 2: Average Loss = 8.2132
+Epoch 3: Average Loss = 6.4089
+Epoch 4: Average Loss = 4.1598
+Epoch 5: Average Loss = 1.3417
+Final average loss for lambda=1.0: 1.3417
+
+Training OT-DBC model with ot_lambda = 2.0
+Training model: OT_DBC
+Epoch 1: Average Loss = 12.6331
+Epoch 2: Average Loss = 11.2421
+Epoch 3: Average Loss = 9.1495
+Epoch 4: Average Loss = 6.5927
+Epoch 5: Average Loss = 2.9602
+Final average loss for lambda=2.0: 2.9602
+Experiment 2 complete. Hyperparameter sensitivity plot saved as hyperparameterSensitivity_otLoss.pdf
+
+
+Running Experiment 3: OOD Generalization Study
+
+Evaluating OT-DBC model under OOD conditions:
+Episode 1 reward: -3.4800
+Episode 2 reward: -3.7676
+Episode 3 reward: -3.6164
+Episode 4 reward: -3.5475
+Episode 5 reward: -3.9103
+Average OOD reward: -3.6643
+
+Evaluating Baseline Diffusion_BC model under OOD conditions:
+Episode 1 reward: -3.6795
+Episode 2 reward: -3.5004
+Episode 3 reward: -3.4002
+Episode 4 reward: -3.9201
+Episode 5 reward: -3.7459
+Average OOD reward: -3.6492
+Experiment 3 complete. OOD performance plot saved as ood_inferenceLatency.pdf
+
+Quick test completed successfully.
+Setting status_enum to 'stopped'
